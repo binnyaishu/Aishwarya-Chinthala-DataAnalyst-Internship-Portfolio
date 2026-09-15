@@ -21,7 +21,7 @@ Each task below links to its own repository with full code, analysis, and docume
 | **2** | EDA & Business Intelligence                | [Task 2 Repo](https://github.com/binnyaishu/ApexPlanet-Task2)                 | SQL business insights + EDA report         |
 | **3** | Deep-Dive & Interactive Dashboarding       | [Task 3 Repo](https://github.com/binnyaishu/ApexPlanet-Task3)                 | Live RFM segmentation dashboard            |
 | **4** | Data Storytelling & Statistical Validation | [Task 4 Repo](https://github.com/binnyaishu/ApexPlanet-Task4)                 | Final deck + hypothesis testing            |
-| **5** | Capstone Integration & Portfolio           | _This repo_                                                                   | Consolidated portfolio                     |
+| **5** | Capstone Integration & Portfolio           | [_This repo_  ](https://github.com/binnyaishu/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio)                                                                 | Consolidated portfolio                     |
 
 ---
 
@@ -96,6 +96,6 @@ demographic-based targeting that the data doesn't support.
 ## 📬 Contact
 
 **Aishwarya Chinthala]**
-[[LinkedIn ](https://www.linkedin.com/in/aishwarya-chinthala-a22947425/)] · [aishwaryareddy189@gmail.com] · [[Portfolio Website, if built](https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)]
+[[LinkedIn ](https://www.linkedin.com/in/aishwarya-chinthala-a22947425/)] · [aishwaryareddy189@gmail.com] · [[Portfolio Website, I built](https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)]
 
 
