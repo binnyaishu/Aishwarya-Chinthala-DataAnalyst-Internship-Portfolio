@@ -17,7 +17,7 @@ Each task below links to its own repository with full code, analysis, and docume
 
 | Task  | Focus                                      | Repo                                                                          | Key Deliverable                            |
 | ----- | ------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------ |
-| **1** | Data Immersion & Wrangling                 | [Task 1 Repo] (https://github.com/binnyaishu/ApexPlanet-Task1-data_wrangling) | Cleaned, validated, analysis-ready dataset |
+| **1** | Data Immersion & Wrangling                 | [Task 1 Repo](https://github.com/binnyaishu/ApexPlanet-Task1-data_wrangling) | Cleaned, validated, analysis-ready dataset |
 | **2** | EDA & Business Intelligence                | [Task 2 Repo](https://github.com/binnyaishu/ApexPlanet-Task2)                 | SQL business insights + EDA report         |
 | **3** | Deep-Dive & Interactive Dashboarding       | [Task 3 Repo](https://github.com/binnyaishu/ApexPlanet-Task3)                 | Live RFM segmentation dashboard            |
 | **4** | Data Storytelling & Statistical Validation | [Task 4 Repo](https://github.com/binnyaishu/ApexPlanet-Task4)                 | Final deck + hypothesis testing            |
@@ -89,7 +89,7 @@ demographic-based targeting that the data doesn't support.
 - [Task 2: EDA & Business Intelligence](https://www.linkedin.com/feed/update/urn:li:activity:7492601755604758533/)
 - [Task 3: Interactive Dashboard Demo](https://www.linkedin.com/feed/update/urn:li:activity:7496986149606014976/)
 - [Task 4: Stakeholder Presentation](https://www.linkedin.com/feed/update/urn:li:activity:7501323796897914880/)
-- [Task 5: Portfolio Walkthrough](your-linkedin-video-link)
+- [Task 5: Portfolio Walkthrough]([your-linkedin-video-link](https://www.linkedin.com/feed/update/urn:li:activity:7505623220629323776/))
 
 ---
 
@@ -98,5 +98,4 @@ demographic-based targeting that the data doesn't support.
 **Aishwarya Chinthala]**
 [[LinkedIn ](https://www.linkedin.com/in/aishwarya-chinthala-a22947425/)] · [aishwaryareddy189@gmail.com] · [[Portfolio Website, if built](https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)]
 
-_This portfolio was built as part of the ApexPlanet Software Pvt. Ltd. Data Analytics
-Internship._
+
