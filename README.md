@@ -7,8 +7,9 @@ This repository is the single point of reference for my Data Analytics internshi
 ApexPlanet — from raw data to a statistically validated, presentation-ready business narrative.
 Each task below links to its own repository with full code, analysis, and documentation.
 
-🔗 **Live Interactive Dashboard:** [your GitHub Pages dashboard URL]
+🔗 **Live Interactive Dashboard:** (https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)
 📊 **Final Presentation Deck:** [`ApexPlanet_Final_Presentation.pptx`](./ApexPlanet_Final_Presentation.pptx) (also in this repo)
+📊 **Final Presentation Deck:** [`ApexPlanet_Final_Presentation.ppt`](./ApexPlanet_Final_Presentation.ppt) (also in this repo)
 
 ---
 
