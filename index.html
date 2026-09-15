@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aishwarya Chinthala — Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #fbfaf7;
+        --paper-shade: #f2f0e9;
+        --ink: #1b2340;
+        --slate: #5b6478;
+        --amber: #c98a3d;
+        --teal: #2f8f82;
+        --coral: #d2665a;
+        --violet: #6b5ca5;
+        --gold: #b8952e;
+        --line: #ddd9ce;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          "Inter",
+          -apple-system,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Lora", Georgia, serif;
+        font-weight: 600;
+      }
+      .mono {
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .namebar {
+        padding: 26px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .namebar .wrap {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .namebar .name {
+        font-family: "Lora", serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .namebar .name span {
+        color: var(--teal);
+      }
+      .namebar .tagline {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12.5px;
+        color: var(--slate);
+      }
+
+      /* ---- Hero ---- */
+      header.hero {
+        padding: 100px 0 70px;
+        border-bottom: 1px solid var(--line);
+      }
+      .hero .kicker {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 13px;
+        color: var(--slate);
+        letter-spacing: 0.02em;
+        margin-bottom: 22px;
+      }
+      .hero h1 {
+        font-size: 40px;
+        line-height: 1.28;
+        max-width: 620px;
+        letter-spacing: -0.01em;
+      }
+      .hero .role {
+        margin-top: 18px;
+        font-size: 17px;
+        color: var(--slate);
+        max-width: 560px;
+      }
+      .stat-row {
+        display: flex;
+        gap: 34px;
+        margin-top: 46px;
+        flex-wrap: wrap;
+      }
+      .stat-row .stat .num {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--amber);
+      }
+      .stat-row .stat .lbl {
+        font-size: 12.5px;
+        color: var(--slate);
+        margin-top: 3px;
+      }
+      .hero-links {
+        margin-top: 40px;
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+      .hero-links a {
+        font-size: 14px;
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid var(--ink);
+        padding-bottom: 2px;
+      }
+      .hero-links a:hover {
+        color: var(--amber);
+        border-color: var(--amber);
+      }
+
+      /* ---- Section shared ---- */
+      section {
+        padding: 64px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      section:last-of-type {
+        border-bottom: none;
+      }
+      .section-label {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12.5px;
+        color: var(--slate);
+        margin-bottom: 10px;
+      }
+      section h2 {
+        font-size: 24px;
+        max-width: 520px;
+        margin-bottom: 34px;
+      }
+
+      /* ---- Timeline / ledger ---- */
+      .entry {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 0 22px;
+        padding: 26px 0 26px 18px;
+        border-top: 1px solid var(--line);
+        border-left: 3px solid transparent;
+      }
+      .entry:first-child {
+        border-top: none;
+      }
+      .entry .n {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 14px;
+        color: var(--amber);
+        padding-top: 3px;
+      }
+      .entry h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+      .entry p {
+        color: var(--slate);
+        font-size: 14.5px;
+        max-width: 540px;
+      }
+      .entry .tags {
+        margin-top: 12px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .entry .tags span {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11.5px;
+        color: var(--slate);
+        background: var(--paper-shade);
+        padding: 3px 9px;
+        border-radius: 3px;
+      }
+      .entry .links {
+        margin-top: 14px;
+        display: flex;
+        gap: 18px;
+      }
+      .entry .links a {
+        font-size: 13.5px;
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid var(--slate);
+      }
+      .entry .links a:hover {
+        color: var(--amber);
+        border-color: var(--amber);
+      }
+
+      /* ---- Skills ---- */
+      .skill-group {
+        margin-bottom: 22px;
+      }
+      .skill-group .cat {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: var(--amber);
+        margin-bottom: 8px;
+      }
+      .skill-group .items {
+        color: var(--ink);
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+      /* ---- Learnings ---- */
+      .learning {
+        padding: 22px 0 22px 22px;
+        border-left: 2px solid var(--amber);
+        margin-bottom: 22px;
+      }
+      .learning:last-child {
+        margin-bottom: 0;
+      }
+      .learning p {
+        font-size: 15.5px;
+        color: var(--ink);
+      }
+      .learning p em {
+        font-style: italic;
+        color: var(--slate);
+      }
+
+      /* ---- Footer ---- */
+      footer {
+        padding: 50px 0 80px;
+      }
+      footer .name {
+        font-family: "Lora", serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      footer .contact {
+        color: var(--slate);
+        font-size: 14.5px;
+      }
+      footer .contact a {
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid var(--line);
+      }
+      footer .contact a:hover {
+        color: var(--amber);
+        border-color: var(--amber);
+      }
+      footer .note {
+        margin-top: 30px;
+        font-size: 12.5px;
+        color: var(--slate);
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 30px;
+        }
+        header.hero {
+          padding: 70px 0 50px;
+        }
+        .entry {
+          grid-template-columns: 1fr;
+        }
+        .entry .n {
+          padding-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="namebar">
+      <div class="wrap">
+        <div class="name">Aishwarya <span>Chinthala</span></div>
+        <div class="tagline">Data Analyst Internship Portfolio</div>
+      </div>
+    </div>
+
+    <header class="hero wrap">
+      <div class="kicker">
+        Data Analyst Internship Portfolio — ApexPlanet Software Pvt. Ltd.
+      </div>
+      <h1>
+        One dataset, five stages, and a retention strategy the numbers actually
+        support.
+      </h1>
+      <p class="role">
+        Aishwarya Chinthala — Data Analytics Intern. From raw transactions to a
+        statistically validated business recommendation, documented end to end.
+      </p>
+
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num" style="color: var(--amber)">1,000</div>
+          <div class="lbl">transactions cleaned</div>
+        </div>
+        <div class="stat">
+          <div class="num" style="color: var(--teal)">947</div>
+          <div class="lbl">customers segmented</div>
+        </div>
+        <div class="stat">
+          <div class="num" style="color: var(--coral)">3</div>
+          <div class="lbl">hypotheses tested</div>
+        </div>
+        <div class="stat">
+          <div class="num" style="color: var(--violet)">5</div>
+          <div class="lbl">tasks, one narrative</div>
+        </div>
+      </div>
+
+      <div class="hero-links">
+        <a href="#timeline">See the work</a>
+        <a href="https://binnyaishu.github.io/ApexPlanet-Task3/"
+          >Live dashboard</a
+        >
+        <a href="https://github.com/binnyaishu?tab=repositories">GitHub</a>
+      </div>
+    </header>
+
+    <section id="timeline" class="wrap">
+      <div class="section-label">The work, in order</div>
+      <h2>
+        Every stage builds on the one before it — nothing here stands alone.
+      </h2>
+
+      <div class="entry" style="border-left-color: var(--amber)">
+        <div class="n mono" style="color: var(--amber)">01</div>
+        <div>
+          <h3>Data Immersion &amp; Wrangling</h3>
+          <p>
+            Started with 1,000 raw sales transactions. Found and fixed 2%
+            missing ages, 1.3% missing cities, and a duplicate-ID bug affecting
+            9 genuinely distinct transactions. Delivered a validated,
+            analysis-ready dataset with a full data dictionary.
+          </p>
+          <div class="tags">
+            <span style="background: #f7ecdb; color: #8a5e1e">pandas</span
+            ><span style="background: #f7ecdb; color: #8a5e1e"
+              >data validation</span
+            ><span style="background: #f7ecdb; color: #8a5e1e"
+              >feature engineering</span
+            >
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/binnyaishu/ApexPlanet-Task1-data_wrangling"
+              >Repository</a
+            ><a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7488279619247190018/"
+              >Video walkthrough</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="entry" style="border-left-color: var(--teal)">
+        <div class="n mono" style="color: var(--teal)">02</div>
+        <div>
+          <h3>EDA &amp; Business Intelligence</h3>
+          <p>
+            Explored the cleaned data statistically and visually. Found
+            Electronics drives 36% of revenue from just two products. Built a
+            normalized 3-table SQL database and answered 7 real business
+            questions using joins, filtering, and aggregation.
+          </p>
+          <div class="tags">
+            <span style="background: #e4f1ee; color: #1e5a52">SQL</span
+            ><span style="background: #e4f1ee; color: #1e5a52">matplotlib</span
+            ><span style="background: #e4f1ee; color: #1e5a52"
+              >correlation analysis</span
+            >
+          </div>
+          <div class="links">
+            <a href="https://github.com/binnyaishu/ApexPlanet-Task2"
+              >Repository</a
+            ><a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7492601755604758533/"
+              >Video walkthrough</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="entry" style="border-left-color: var(--coral)">
+        <div class="n mono" style="color: var(--coral)">03</div>
+        <div>
+          <h3>Deep-Dive &amp; Interactive Dashboarding</h3>
+          <p>
+            Segmented all 947 customers with RFM analysis, surfacing a
+            high-value "At Risk" group worth a targeted win-back campaign. Built
+            a live, filterable dashboard — self-contained HTML/JS, hosted free,
+            no BI license required.
+          </p>
+          <div class="tags">
+            <span style="background: #f7e7e4; color: #9c4436"
+              >RFM segmentation</span
+            ><span style="background: #f7e7e4; color: #9c4436">Chart.js</span
+            ><span style="background: #f7e7e4; color: #9c4436">KPI design</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/binnyaishu/ApexPlanet-Task3"
+              >Repository</a
+            ><a href="https://binnyaishu.github.io/ApexPlanet-Task3/"
+              >Live dashboard</a
+            ><a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7496986149606014976/"
+              >Video walkthrough</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="entry" style="border-left-color: var(--violet)">
+        <div class="n mono" style="color: var(--violet)">04</div>
+        <div>
+          <h3>Data Storytelling &amp; Statistical Validation</h3>
+          <p>
+            Synthesized every finding into one narrative and pressure-tested the
+            "obvious" assumptions with formal hypothesis testing. All three
+            tests — gender, city, category pricing — came back statistically
+            non-significant, validating that customer behavior, not
+            demographics, is the real signal.
+          </p>
+          <div class="tags">
+            <span style="background: #ebe7f3; color: #4e3f80">t-test</span
+            ><span style="background: #ebe7f3; color: #4e3f80">chi-squared</span
+            ><span style="background: #ebe7f3; color: #4e3f80">ANOVA</span
+            ><span style="background: #ebe7f3; color: #4e3f80"
+              >stakeholder presentation</span
+            >
+          </div>
+          <div class="links">
+            <a href="https://github.com/binnyaishu/ApexPlanet-Task4"
+              >Repository</a
+            ><a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7501323796897914880/"
+              >Video walkthrough</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="entry" style="border-left-color: var(--gold)">
+        <div class="n mono" style="color: var(--gold)">05</div>
+        <div>
+          <h3>Capstone Integration &amp; Portfolio</h3>
+          <p>
+            Consolidated all four stages into this single reference point — one
+            narrative, one skills summary, one place to see the whole project
+            end to end.
+          </p>
+          <div class="tags">
+            <span style="background: #f3eed9; color: #7a6217"
+              >documentation</span
+            ><span style="background: #f3eed9; color: #7a6217"
+              >portfolio design</span
+            >
+          </div>
+          <div class="links"><a href="#">This page</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-label">What this demonstrates</div>
+      <h2>Skills &amp; tools</h2>
+
+      <div class="skill-group">
+        <div class="cat" style="color: var(--amber)">Data Wrangling</div>
+        <div class="items">
+          Missing-value imputation · deduplication · validation · feature
+          engineering
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="cat" style="color: var(--teal)">
+          Analysis &amp; Statistics
+        </div>
+        <div class="items">
+          Descriptive statistics · correlation analysis · hypothesis testing
+          (t-test, chi-squared, ANOVA) · confidence intervals
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="cat" style="color: var(--coral)">SQL</div>
+        <div class="items">
+          Schema design &amp; normalization · joins · aggregation · filtering
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="cat" style="color: var(--violet)">
+          Visualization &amp; BI
+        </div>
+        <div class="items">
+          Matplotlib · Seaborn · Chart.js · KPI definition · interactive
+          dashboarding
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="cat" style="color: var(--gold)">Communication</div>
+        <div class="items">
+          Data storytelling · stakeholder presentations · technical
+          documentation · video walkthroughs
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-label">What I'd tell the next intern</div>
+      <h2>Key learnings</h2>
+
+      <div class="learning" style="border-left-color: var(--amber)">
+        <p>
+          Clean data is a prerequisite, not a formality.
+          <em
+            >The duplicate-ID bug in Task 1 would have silently corrupted every
+            downstream join if it had gone unnoticed.</em
+          >
+        </p>
+      </div>
+      <div class="learning" style="border-left-color: var(--teal)">
+        <p>
+          Statistical validation changes recommendations, not just confidence in
+          them.
+          <em
+            >Three "obvious" hypotheses all failed significance testing — which
+            redirected the whole strategy toward behavioral segmentation instead
+            of demographics.</em
+          >
+        </p>
+      </div>
+      <div class="learning" style="border-left-color: var(--coral)">
+        <p>
+          A dashboard only creates value if someone actually opens it.
+          <em
+            >Building it as a zero-install web app removed every point of
+            friction between "built" and "used."</em
+          >
+        </p>
+      </div>
+      <div class="learning" style="border-left-color: var(--violet)">
+        <p>
+          The best insight is often a negative result.
+          <em
+            >"These three things don't matter" was more strategically useful
+            than confirming something everyone already assumed.</em
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <div class="name">Aishwarya Chinthala</div>
+      <div class="contact">
+        <a href="aishwaryareddy189@gmail.com">e-mail</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/aishwarya-chinthala-a22947425/"
+          >LinkedIn</a
+        >
+        &nbsp;·&nbsp;
+        <a href="https://github.com/binnyaishu?tab=repositories">GitHub</a>
+      </div>
+      <div class="note">
+        Built for the ApexPlanet Data Analytics Internship, Task 5 — Capstone
+        Integration &amp; Portfolio Finalization.
+      </div>
+    </footer>
+  </body>
+</html>
