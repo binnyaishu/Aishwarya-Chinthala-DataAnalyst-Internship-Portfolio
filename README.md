@@ -95,8 +95,8 @@ demographic-based targeting that the data doesn't support.
 
 ## 📬 Contact
 
-**[Your Name]**
-[[LinkedIn Profile](https://www.linkedin.com/in/aishwarya-chinthala-a22947425/)] · [aishwaryareddy189@gmail.com] · [Portfolio Website, if built]
+**Aishwarya Chinthala]**
+[[LinkedIn ](https://www.linkedin.com/in/aishwarya-chinthala-a22947425/)] · [aishwaryareddy189@gmail.com] · [[Portfolio Website, if built](https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)]
 
 _This portfolio was built as part of the ApexPlanet Software Pvt. Ltd. Data Analytics
 Internship._
