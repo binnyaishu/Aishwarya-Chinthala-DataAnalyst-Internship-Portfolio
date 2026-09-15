@@ -1,7 +1,7 @@
-# [Your Name] — Data Analyst Internship Portfolio
+# Aishwarya Chinthala — Data Analyst Internship Portfolio
 
 **ApexPlanet Software Pvt. Ltd. — Data Analytics Internship**
-**Duration:** [start date] – [end date] (5 tasks, ~60 days)
+**Duration:** [21-07-2026] – [18-09-2026] (5 tasks, ~60 days)
 
 This repository is the single point of reference for my Data Analytics internship at
 ApexPlanet — from raw data to a statistically validated, presentation-ready business narrative.
@@ -16,7 +16,7 @@ Each task below links to its own repository with full code, analysis, and docume
 
 | Task  | Focus                                      | Repo                                                                          | Key Deliverable                            |
 | ----- | ------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------ |
-| **1** | Data Immersion & Wrangling                 | [Task 1 Repo] (https://github.com/binnyaishu/)ApexPlanet-Task1-data_wrangling | Cleaned, validated, analysis-ready dataset |
+| **1** | Data Immersion & Wrangling                 | [Task 1 Repo] (https://github.com/binnyaishu/ApexPlanet-Task1-data_wrangling) | Cleaned, validated, analysis-ready dataset |
 | **2** | EDA & Business Intelligence                | [Task 2 Repo](https://github.com/binnyaishu/ApexPlanet-Task2)                 | SQL business insights + EDA report         |
 | **3** | Deep-Dive & Interactive Dashboarding       | [Task 3 Repo](https://github.com/binnyaishu/ApexPlanet-Task3)                 | Live RFM segmentation dashboard            |
 | **4** | Data Storytelling & Statistical Validation | [Task 4 Repo](https://github.com/binnyaishu/ApexPlanet-Task4)                 | Final deck + hypothesis testing            |
