@@ -9,7 +9,7 @@ Each task below links to its own repository with full code, analysis, and docume
 
 🔗 **Live Interactive Dashboard:** (https://binnyaishu.github.io/Aishwarya-Chinthala-DataAnalyst-Internship-Portfolio/)
 📊 **Final Presentation Deck:** [`ApexPlanet_Final_Presentation.pptx`](./ApexPlanet_Final_Presentation.pptx) (also in this repo)
-📊 **Final Presentation Deck:** [`ApexPlanet_Final_Presentation.ppt`](./ApexPlanet_Final_Presentation.ppt) (also in this repo)
+
 
 ---
 
